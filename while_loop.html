@@ -1,0 +1,37 @@
+<!-- To print prime number upto 100 -->
+
+<html>
+    <head>
+        <script type="text/javascript">
+            var i=2,n=1;
+            var Number = 1, count; 
+  
+  //printf(" Prime Number from 1 to 100 are: \n"); 
+  while(Number <= 100)
+  {
+    count = 0;
+    i = 2;
+    while(i <= Number/2)
+    {
+      if(Number%i == 0)
+      {
+        count++;
+	break;
+      }
+      i++;	
+    }	
+    if(count == 0 && Number != 1 )
+    {
+	//printf(" %d ", Number);
+    document.write("<h1> "+Number+"</h1>")
+    }
+    Number++; 
+  }
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
